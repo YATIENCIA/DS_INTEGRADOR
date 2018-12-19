@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author Palacios
  */
-public class ComprobanteElectronico {
+public class ComprobanteElectronico implements Interface_Comprobante{
     
     protected List<String> detallesEmisor;
     protected String nombreCliente;
@@ -81,6 +81,11 @@ public class ComprobanteElectronico {
 
     public void setClaveAcceso(String claveAcceso) {
         this.claveAcceso = claveAcceso;
+    }
+
+    @Override
+    public String getExtras() {
+        return "CE normal";
     }
 
 

@@ -17,7 +17,8 @@ public class main {
     public static void main(String[] args) {
         ComprobantesFactory cf=new ComprobantesFactory();
         Interface_Comprobante comprobante=(Interface_Comprobante) cf.getComprobante("Factura");
+        System.out.println(comprobante.getExtras());
         comprobante= new LemaDecorator(comprobante);
-        comprobante.getExtras();
+        System.out.println(comprobante.getExtras());
     }
 }
