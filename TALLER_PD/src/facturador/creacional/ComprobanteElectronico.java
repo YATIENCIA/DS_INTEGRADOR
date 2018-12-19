@@ -29,6 +29,11 @@ public class ComprobanteElectronico implements Interface_Comprobante{
         this.detallesEmisor = new LinkedList<>();
     }
 
+    @Override
+    public String toString() {
+        return "Detalles del Emisor: " + detallesEmisor +"\n"+ "Nombre del Cliente: " + nombreCliente +"\n"+ "Codigo: " + codigo +"\n"+ "Fecha: " + fecha +"\n"+ "Numero de Autorizacion: " + numeroAutorizacion +"\n"+"Clave de Acceso: " + claveAcceso +"\n";
+    }
+
 
     
     public ComprobanteElectronico() {
@@ -85,7 +90,7 @@ public class ComprobanteElectronico implements Interface_Comprobante{
 
     @Override
     public String getExtras() {
-        return "CE normal";
+        return "Membrete Obligatorio ";
     }
 
 
