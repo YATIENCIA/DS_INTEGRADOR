@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package facturador.estructural;
+package facturador.Comportamental;
 
 import facturador.creacional.ComprobanteElectronico;
 
